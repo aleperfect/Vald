@@ -55,7 +55,7 @@ async function start(file) {
   if (isRunning) return;
   isRunning = true;
 
-  say('Readz Aleizn', {
+  say(' 𝙔𝙪𝙢𝙢𝙮 𝘽𝙤𝙩', {
     font: 'chrome',
     align: 'center',
     gradient: ['red', 'magenta'],
@@ -80,10 +80,10 @@ async function start(file) {
 
   let numeroTelefono = '';
   if (opcion === '2') {
-    const phoneNumber = await question(chalk.yellowBright.bold('\n—◉ㅤEscriba su número de WhatsApp:\n') + chalk.white.bold('◉ㅤEjemplo: +51992621601\n—> '));
+    const phoneNumber = await question(chalk.yellowBright.bold('\n—◉ㅤEscriba su número de WhatsApp:\n') + chalk.white.bold('◉ㅤEjemplo: +56971943258 \n—> '));
     numeroTelefono = formatearNumeroTelefono(phoneNumber);
     if (!esNumeroValido(numeroTelefono)) {
-      console.log(chalk.bgRed(chalk.white.bold('[ ERROR ] Número inválido. Asegúrese de haber escrito su numero en formato internacional y haber comenzado con el código de país.\n—◉ㅤEjemplo:\n◉ +51992621601\n')));
+      console.log(chalk.bgRed(chalk.white.bold('[ ERROR ] Número inválido. Asegúrese de haber escrito su numero en formato internacional y haber comenzado con el código de país.\n—◉ㅤEjemplo:\n◉ +56971943258 \n')));
       process.exit(0);
     }
     process.argv.push(numeroTelefono);
